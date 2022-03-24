@@ -1,0 +1,42 @@
+﻿@model Home
+
+<form asp-controller="Home" asp-action="Inicial" method="POST">
+
+
+
+
+
+    <div class="form-group">
+        <label>Selecione uma ação</label>
+        <select asp-for="opcao" class="form-control">
+            <option value=1>Cadastrar/Atualizar </option>
+            <option value=2>Iniciar Consulta</option>
+            <option value=3>Relatórios</option>
+
+        </select>
+    </div>
+
+
+
+
+
+    <div>
+        <button class="btn btn-success">Confirmar</button>
+    </div>
+
+    
+</form>
+<div class="  cart-btn-transform mt-2 float-right m-2">
+    <a class="btn btn-outline-info" href="/home/pesquisamed">Pesquisar Medico</a>
+    <a class="btn btn-outline-info" href="/home/pesquisa">Pesquisar Paciente</a>
+    <a class="btn btn-danger " href="/home">Sair</a>
+</div>
+
+
+
+
+
+
+
+
+

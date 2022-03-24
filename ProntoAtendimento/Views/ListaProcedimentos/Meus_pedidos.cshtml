@@ -1,0 +1,42 @@
+@model List<ItensUtilizados>
+
+
+<table class="table table-hover">
+    <tr>
+        <th>Confirmar Procedimentos para a consulta?</th>
+
+
+    </tr>
+
+    <tr>
+        
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Valor</th>
+
+    </tr>
+
+    <int>
+        
+        @foreach (var item in Model)
+        {
+<tr>
+    
+    <td>@item.Procedimento.IdProcedimento</td>
+    <td>@item.Procedimento.Nome</td>
+    <td>@item.Procedimento.Tipo</td>
+    <td>@item.Procedimento.Valor</td>
+
+
+
+</tr>}
+
+
+
+
+</table>
+
+
+<a class="btn btn-success" href="/itensutilizados/criar/">Confirmar</a>
+<a class="btn btn-info" href="/listaprocedimentos/index/">Voltar</a>
